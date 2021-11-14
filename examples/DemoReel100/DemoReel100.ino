@@ -60,8 +60,9 @@ void loop()
 
 void nextPattern()
 {
-  // add one to the current pattern number, and wrap around at the end
-  gCurrentPatternNumber = (gCurrentPatternNumber + 1) % ARRAY_SIZE( gPatterns);
+  //randomize next pattern
+  int patronaleatorio=random8(ARRAY_SIZE( gPatterns));
+  gCurrentPatternNumber = patronaleatorio;
 }
 
 void rainbow() 
